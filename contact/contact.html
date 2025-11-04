@@ -407,37 +407,44 @@ body[data-form-submit="default"] .container-wrap input[type=submit], body[data-f
 			</style>
 			<div class="wpforms-container wpforms-container-full wpforms-render-modern" id="wpforms-2048">
 
-				<!-- START: Formspree contact form (keeps your formatting) -->
 				<form id="contact-form" action="https://formspree.io/f/mzzjwvyq" method="POST" style="max-width:600px;margin:auto;font-family:'Poppins',sans-serif;">
 					
-					<label style="display:block;margin-bottom:10px;">
-						Name <span style="color:red;">*</span>
-						<input type="text" name="name" required style="width:100%;padding:10px;border:1px solid #ccc;border-radius:4px;margin-top:5px;">
-					</label>
+	<label style="display:block;margin-bottom:10px;">
+		Name <span style="color:red;">*</span>
+		<input type="text" name="name" required style="width:100%;padding:10px;border:1px solid #ccc;border-radius:4px;margin-top:5px;">
+	</label>
 
-					<label style="display:block;margin-bottom:10px;">
-						Email <span style="color:red;">*</span>
-						<input type="email" name="email" required style="width:100%;padding:10px;border:1px solid #ccc;border-radius:4px;margin-top:5px;">
-					</label>
+	<label style="display:block;margin-bottom:10px;">
+		Email <span style="color:red;">*</span>
+		<input type="email" name="email" required style="width:100%;padding:10px;border:1px solid #ccc;border-radius:4px;margin-top:5px;">
+	</label>
 
-					<label style="display:block;margin-bottom:10px;">
-						Message <span style="color:red;">*</span>
-						<textarea name="message" required style="width:100%;padding:10px;height:150px;border:1px solid #ccc;border-radius:4px;margin-top:5px;resize:vertical;"></textarea>
-					</label>
+	<label style="display:block;margin-bottom:10px;">
+		Mobile Number <span style="color:red;">*</span>
+		<input type="tel" name="phone" required placeholder="" 
+		style="width:100%;padding:10px;border:1px solid #ccc;border-radius:4px;margin-top:5px;">
+	</label>
 
-					<!-- honeypot for spam protection -->
-					<input type="text" name="_gotcha" style="display:none">
+	<label style="display:block;margin-bottom:10px;">
+		Message <span style="color:red;">*</span>
+		<textarea name="message" required style="width:100%;padding:10px;height:150px;border:1px solid #ccc;border-radius:4px;margin-top:5px;resize:vertical;"></textarea>
+	</label>
 
-					<!-- optional redirect or you can keep inline message -->
-					<input type="hidden" name="_next" value="/thank-you.html">
+	<!-- honeypot for spam protection -->
+	<input type="text" name="_gotcha" style="display:none">
 
-					<button type="submit" style="background-color:#050977;color:white;padding:12px 24px;border:none;border-radius:4px;cursor:pointer;font-size:16px;">
-						Send Message
-					</button>
+	<!-- optional redirect or inline message -->
+	<input type="hidden" name="_next" value="/thank-you.html">
 
-					<!-- Inline message area -->
-					<p id="form-message" style="margin-top:15px;font-size:14px;font-weight:500;display:none;"></p>
-				</form>
+	<button type="submit" style="background-color:#050977;color:white;padding:12px 24px;border:none;border-radius:4px;cursor:pointer;font-size:16px;">
+		Send Message
+	</button>
+
+	<!-- Inline message area -->
+	<p id="form-message" style="margin-top:15px;font-size:14px;font-weight:500;display:none;"></p>
+</form>
+
+
 				<!-- END: Formspree contact form -->
 
 				<script>
